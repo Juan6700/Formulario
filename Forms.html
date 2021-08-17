@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+		
+<head>
+	<meta charset="utf-8"/>
+	<title>formulario_uno</title>
+    <link rel="stylesheet" type="text/css" href="Forms.css">
+</head>
+	<body>
+        <h1>Tipos de formularios</h1>
+
+        <form action="#" method="post" >
+            <p>Nombre: <input type="text" required name="nombre" ></p>
+            <p>Apellidos: <input type="text" placeholder="Escribe los
+            dos apellidos" name="ape" size="25" ></p>
+            <p>Ubicacion: <input type="text" value="Medellín"
+            name="localidad" size="18" minlength="2"></p>
+            <p>
+                <br>
+                <hr>
+
+            <p>Elegir memoria USB:<input list="listaUsb"></p>
+<datalist id="listaUsb" >
+<option value="8" >
+<option value="16" >
+<option value="32" >
+<option value="64" >
+</datalist>
+        </form>
+<br>
+<hr>
+
+<p><input type="checkbox" name="condiciones"
+checked="checked"> Acepto condiciones</p>
+<br><hr>
+
+<p>Sexo: Hombre<input type="radio" name="sexo" value="h">
+    Mujer<input type="radio" name="sexo" value="m"></p>
+    <br><hr>
+    
+
+    <input type="number" name="edad" min="18" max="65"
+placeholder="Entre 18 y 65" id="idEdad" >
+<br><hr>
+
+
+<form action="#" method="post" >
+    <p>Volumen (10-100): <input type="range" name="volumen"
+    min="10" max="100" step="5" />
+    </p>
+    <br><hr>
+    
+
+    <p>Contraseña: <input type="password" name="clave" ></p>
+   <br> <hr>
+    
+
+    <p>email: <input type="email" name="correo" multiple ></p>
+    <br>
+    <hr>
+
+    <p>Localidad: <input type="text" name="ciudad"
+        value="Valencia"/> </p>
+        <p> <input type="reset" value="Borrar" /> </p>
+        <br><hr>
+        
+
+        <p> Oculto: <input type="hidden" value="no se puede ver"
+            /> </p>
+            <br><hr>
+            
+
+            <input type="date" name="fecha" value="2018-08-23" />
+            <br><hr>
+            
+
+            <input type="time" name="horaInicio" value="23:30:15"
+step="1" />
+
+
+            <br><br><input type="submit" value="Enviar" />
+            </body>
+</html>
